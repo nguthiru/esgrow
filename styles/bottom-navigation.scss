@@ -1,0 +1,50 @@
+@import "./variables.scss";
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  padding: $default-padding;
+
+  .router-link-exact-active {
+    .nav-item {
+      color: white;
+    }
+  }
+}
+
+.nav-item {
+  // background-color: $primary-color;
+  padding: $default-padding/2 $default-padding;
+  border-radius: $default-radius;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  gap: $default-padding/1.5;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-out;
+  i {
+    font-size: 1.5em;
+  }
+}
+.nav-item-icon {
+  width: fit-content;
+
+  i {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.nav-item-text {
+  // margin-top: 10px;
+  font-weight: normal;
+  font-size: small;
+}
+#transact-btn {
+  border-radius: 50%;
+  min-width: 60px;
+  min-height: 60px;
+  margin-bottom: $default-padding/1.5;
+
+  // padding: $default-padding;
+}

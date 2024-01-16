@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import './variables.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.app-main{
+    height: 90dvh;
+}
+
+.row{
+    display: flex;
+    gap: $default-padding;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.primary-btn{
+    background-color: $primary-color;
+    color: white;
+}
+
+.bottom-navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $container-background-color;
+    
+    // height: 15vh;
+}
